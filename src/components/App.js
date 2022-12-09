@@ -3,17 +3,23 @@ import '../styles/App.css';
 
 const App = () => {
 //code here 
-  const [changeStyle , setChangeStyle] = useState("");
-  useEffect(() => {
-    setChangeStyle =("redColor")
+
+  const [changeStyle,setChangeStyle] = useState("");
+  useEffect(() =>{
+    setChangeStyle("redColor");
   },[])
   // setChangeStyle("redColor")
   const clickHandle = () => {
+  
     if(changeStyle === "redColor"){
-      setChangeStyle = ("blueColor");
-    }else{
-      setChangeStyle = ("redColor");
+      setChangeStyle("blueColor")
     }
+    else{
+      setChangeStyle("redColor")
+    }
+      
+    
+    
   }
   return (
     <div id="main">
